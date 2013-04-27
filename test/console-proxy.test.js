@@ -35,12 +35,12 @@
 
       it('should allow us to override the log method', function () {
         console.log('Log', 'me');
-        expect(args).to.be.eql(['Log', 'me']);
+        expect(args.join(" ")).to.be.eql('Log me');
       });
 
       it('should allow us to override the error method', function () {
         console.log('Log', 'me');
-        expect(args).to.be.eql(['Log', 'me']);
+        expect(args.join(" ")).to.be.eql('Log me');
       });
 
       it('should allow us to use the original info method', function () {

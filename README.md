@@ -5,9 +5,10 @@ minimal console proxy for the browser and Node.js
 [![Build Status](https://secure.travis-ci.org/bermi/console-proxy.png?branch=master)](http://travis-ci.org/bermi/console-proxy)
 
 This module allows you to intercept console messages on all browsers
-and on Node.js. It will not override the global console object and
-it will not create stubs for environments where console is not implemented.
+and on Node.js. It will not override the global console object.
+Stubs are created for environments where console methods are not implemented.
 
+Tested on IE7-IE10, Chrome, Safari and Firefox
 
 ## Installation
 
@@ -19,7 +20,7 @@ Include the library on Node.js
 
     var consoleProxy = require('console-proxy');
 
-or include the script for browser (0.36 KB gzipped) usage
+or include the script for browser (0.44 KB gzipped) usage
 
      <script src="https://raw.github.com/bermi/jsonp-client/master/dist/jsonp-client.min.js" type="text/javascript"></script>
 
@@ -39,6 +40,9 @@ or include the script for browser (0.36 KB gzipped) usage
 
 console.[error/info/memory/profile] will continue working as expected unless they
 are explicitly proxied
+
+
+For a crossbrowser console example see examples/browser.html
 
 ### Getting the original console
 

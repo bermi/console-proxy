@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     },
     watch: {
       files: ['grunt.js', 'index.js', 'lib/*.js', 'test/*.js'],
-      tasks: 'lint'
+      tasks: 'lint min'
     },
     dirs: {
       dest: 'dist'

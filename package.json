@@ -1,6 +1,6 @@
 {
   "name": "console-proxy",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "console proxy for the browser and Node.js",
   "author": "Bermi Ferrer <bermi@bermilabs.com>",
   "keywords": [
@@ -9,7 +9,8 @@
     "console.log",
     "logger",
     "browser",
-    "debug"
+    "debug",
+    "crossbrowser"
   ],
   "bugs": {
     "url": "https://github.com/bermi/console-proxy/issues"

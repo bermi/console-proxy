@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Console Proxy Browser example
+        </title>
+        <script src="../dist/console-proxy.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <h1>
+            Console Proxy Example
+        </h1>
+
+        <div id="result">
+        </div>
+
+<script type="text/javascript">
+  // Keep your console on a closure to avoid affecting window.console
+  (function () {
+    var console,
+      result = document.getElementById('result'),
+      getNamespacedConsole = function (namespace) {
+        return consoleProxy.getConsole({
+          log: function () {
+            // Crossbrowser friendly way of passing arguments for console methods
+            var args = Array.prototype.slice.apply(arguments);
+            // Add namespace and date to the original console message
+            args.unshift("[" + namespace + "]", new Date());
+            // Custom DOM logger
+            result.innerText = result.innerText + "\n" + args.join(" ");
+            // Parameters passed over to the original console method
+            // if implemented.
+            return args;
+          }
+        });
+      };
+
+    console = getNamespacedConsole("setup");
+
+    console.log("Setting up app");
+
+    console.log("Changing namespace to 'template'");
+
+    console = getNamespacedConsole("template");
+    console.log("Preparing template rendering");
+
+    // If info or error are not implemented on the browser an
+    // empty function will be executed
+    console.info("Info uses base console.info method");
+    console.error("This error is expected");
+
+  }());
+</script>
+    </body>
+</html>
