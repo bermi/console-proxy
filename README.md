@@ -3,7 +3,6 @@
 minimal console proxy for the browser and Node.js
 
 [![Build Status](https://secure.travis-ci.org/bermi/console-proxy.png?branch=master)](http://travis-ci.org/bermi/console-proxy)
-[![browser support](http://ci.testling.com/bermi/console-proxy.png)](http://ci.testling.com/bermi/console-proxy)
 
 This module allows you to intercept console messages on all browsers
 and on Node.js. It will not override the global console object and

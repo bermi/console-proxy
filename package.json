@@ -1,12 +1,18 @@
 {
   "name": "console-proxy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "console proxy for the browser and Node.js",
   "author": "Bermi Ferrer <bermi@bermilabs.com>",
   "keywords": [
+    "console",
+    "proxy",
+    "console.log",
+    "logger",
+    "browser",
+    "debug"
   ],
   "bugs": {
-      "url": "https://github.com/bermi/console-proxy/issues"
+    "url": "https://github.com/bermi/console-proxy/issues"
   },
   "licenses": [
     {
@@ -15,48 +21,19 @@
     }
   ],
   "repositories": [
-      {
-          "type": "git",
-          "url": "git://github.com/bermi/console-proxy.git"
-      }
+    {
+      "type": "git",
+      "url": "git://github.com/bermi/console-proxy.git"
+    }
   ],
   "engines": {
     "node": "0.8.x"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "~1.9.0",
     "expect.js": "~0.2.0",
     "grunt": "~0.3.x"
-  },
-  "testling": {
-    "browsers": [
-        "iexplore/6.0",
-        "iexplore/7.0",
-        "iexplore/8.0",
-        "iexplore/10.0",
-        "iexplore/9.0",
-        "firefox/16.0",
-        "firefox/17.0",
-        "firefox/18.0",
-        "firefox/19.0",
-        "firefox/nightly",
-        "chrome/23.0",
-        "chrome/24.0",
-        "chrome/25.0",
-        "chrome/canary",
-        "opera/12",
-        "opera/next",
-        "safari/5.0.5",
-        "safari/5.1",
-        "safari/6.0",
-        "iphone/6.0",
-        "ipad/6.0",
-        "android-browser/4.2"
-    ],
-    "harness" : "mocha",
-    "files": "test/*.js"
   },
   "scripts": {
     "test": "make test"
