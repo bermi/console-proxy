@@ -26,7 +26,10 @@
       var console, args;
       before(function () {
 
-        var log = function () { args = Array.prototype.slice.call(arguments); };
+        var log = function () {
+          args = Array.prototype.slice.call(arguments);
+          return false;
+        };
         console = consoleProxy.getConsole({
           log: log,
           error: log

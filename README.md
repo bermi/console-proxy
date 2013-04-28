@@ -31,6 +31,8 @@ or include the script for browser (0.44 KB gzipped) usage
         log: function () {
           var args = Array.prototype.slice.apply(arguments);
           args.unshift("[info]", new Date());
+          // pass arguments for the base console.log or false to
+          // prevent it from being called
           return args;
         }
       });
