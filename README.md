@@ -22,7 +22,7 @@ Include the library on Node.js
 
 or include the script for browser (0.44 KB gzipped) usage
 
-     <script src="https://raw.github.com/bermi/jsonp-client/master/dist/jsonp-client.min.js" type="text/javascript"></script>
+     <script src="https://raw.github.com/bermi/console-proxy/master/dist/console-proxy.min.js" type="text/javascript"></script>
 
 
 ### Create a console proxy
