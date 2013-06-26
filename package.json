@@ -30,6 +30,7 @@
   "engines": {
     "node": "0.8.x"
   },
+  "main": "./lib/console-proxy.js",
   "dependencies": {},
   "devDependencies": {
     "mocha": "~1.9.0",

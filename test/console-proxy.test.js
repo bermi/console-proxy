@@ -6,7 +6,7 @@
 
   if (typeof window === 'undefined') {
     root.consoleProxy = "original";
-    consoleProxy = require('../');
+    consoleProxy = require('../lib/console-proxy.js');
   } else {
     consoleProxy = root.consoleProxy;
   }

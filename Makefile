@@ -4,20 +4,6 @@ test:
 		--reporter spec \
 		$(TESTFLAGS)
 
-test-instrument:
-	jscoverage lib lib-cov
-
-test-clean-instrument:
-	rm -rf lib-cov
-
-test-coverage-report:
-	@NODE_ENV=coverage \
-	./node_modules/.bin/mocha \
-	--reporter html-cov > test/coverage.html && \
-	open test/coverage.html
-
-test-coverage: test-clean-instrument test-instrument test-coverage-report
-
 test-watch:
 	@TESTFLAGS=--watch $(MAKE) test
 
