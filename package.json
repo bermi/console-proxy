@@ -25,9 +25,6 @@
     "type": "git",
     "url": "git://github.com/bermi/console-proxy.git"
   },
-  "engines": {
-    "node": "0.8.x"
-  },
   "main": "./lib/console-proxy.js",
   "dependencies": {},
   "devDependencies": {
