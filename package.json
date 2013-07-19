@@ -1,6 +1,6 @@
 {
   "name": "console-proxy",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "console proxy for the browser and Node.js",
   "author": "Bermi Ferrer <bermi@bermilabs.com>",
   "keywords": [
@@ -21,8 +21,7 @@
       "url": "http://opensource.org/licenses/mit-license.php"
     }
   ],
-  "repository":
-  {
+  "repository": {
     "type": "git",
     "url": "git://github.com/bermi/console-proxy.git"
   },
